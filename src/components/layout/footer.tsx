@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, MapPin, Mail } from "lucide-react";
+import { MessageCircle, MapPin, Mail, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { categories } from "@/lib/products";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -97,11 +97,26 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                {siteConfig.email}
+                <a href={`mailto:${siteConfig.email}`} className="hover:text-gold">
+                  {siteConfig.email}
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                <a href={`tel:${siteConfig.phone}`} className="hover:text-gold">
+                  {siteConfig.phone}
+                </a>
               </li>
               <li className="flex items-start gap-2">
                 <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                Order &amp; support on WhatsApp
+                <a
+                  href={whatsappLink(`Hello ${siteConfig.name}!`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold"
+                >
+                  Order &amp; support on WhatsApp
+                </a>
               </li>
             </ul>
           </div>

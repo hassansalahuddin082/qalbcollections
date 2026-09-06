@@ -1,6 +1,10 @@
+import { siteConfig } from "@/lib/site-config";
+
 const messages = [
   "Cash on Delivery — Pay When It Arrives",
   "Order Instantly via WhatsApp",
+  `Call or WhatsApp: ${siteConfig.phone}`,
+  `Email: ${siteConfig.email}`,
   "6 Month Machine Warranty on Every Watch",
   "Free Delivery on Orders Above Rs 5,000",
 ];

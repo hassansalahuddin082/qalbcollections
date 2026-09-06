@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MessageCircle, MapPin, Mail } from "lucide-react";
+import { MessageCircle, MapPin, Mail, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { whatsappLink } from "@/lib/whatsapp";
 import Reveal from "@/components/ui/reveal";
@@ -36,7 +36,7 @@ export default function ContactPage() {
           Chat on WhatsApp
         </a>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <div className="rounded-2xl border border-line bg-white/60 p-6">
             <MapPin className="mx-auto h-5 w-5 text-maroon" />
             <p className="mt-3 text-sm font-semibold text-ink">Location</p>
@@ -45,7 +45,22 @@ export default function ContactPage() {
           <div className="rounded-2xl border border-line bg-white/60 p-6">
             <Mail className="mx-auto h-5 w-5 text-maroon" />
             <p className="mt-3 text-sm font-semibold text-ink">Email</p>
-            <p className="mt-1 text-sm text-ink/60">{siteConfig.email}</p>
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="mt-1 block text-sm text-ink/60 hover:text-maroon"
+            >
+              {siteConfig.email}
+            </a>
+          </div>
+          <div className="rounded-2xl border border-line bg-white/60 p-6">
+            <Phone className="mx-auto h-5 w-5 text-maroon" />
+            <p className="mt-3 text-sm font-semibold text-ink">Phone</p>
+            <a
+              href={`tel:${siteConfig.phone}`}
+              className="mt-1 block text-sm text-ink/60 hover:text-maroon"
+            >
+              {siteConfig.phone}
+            </a>
           </div>
           <div className="rounded-2xl border border-line bg-white/60 p-6">
             <InstagramIcon className="mx-auto h-5 w-5 text-maroon" />

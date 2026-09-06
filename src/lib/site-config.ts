@@ -7,11 +7,12 @@ export const siteConfig = {
   url: "https://qalbcollections.com",
   ogImage: "/images/logo/qalb-logo.jpg",
   /**
-   * IMPORTANT: replace with the real business WhatsApp number
-   * in international format, digits only (no + or spaces).
+   * Business WhatsApp number in international format, digits only (no + or spaces).
+   * Display phone is the local number shown on the site.
    */
-  whatsappNumber: "923001234567",
-  email: "hello@qalbcollections.com",
+  whatsappNumber: "923706369287",
+  phone: "03706369287",
+  email: "qalbperfume1@gmail.com",
   address: "Lahore, Pakistan",
   socials: {
     instagram: "https://instagram.com",
