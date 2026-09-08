@@ -6,10 +6,6 @@ export const siteConfig = {
     "QALB Collections is a premium watch house offering an exclusive curation of dress, sport and chronograph timepieces — ordered in seconds on WhatsApp, paid for on delivery.",
   url: "https://qalbcollections.com",
   ogImage: "/images/logo/qalb-logo.jpg",
-  /**
-   * Business WhatsApp number in international format, digits only (no + or spaces).
-   * Display phone is the local number shown on the site.
-   */
   whatsappNumber: "923706369287",
   phone: "03706369287",
   email: "qalbperfume1@gmail.com",
